@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #F8FAFC;
+    color: #0F172A;
+  }
+}
+
+/* Custom range slider styling aligned with Pareto & Asociados Navy and Gold identity */
+input[type="range"].pareto-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: #E2E8F0;
+  outline: none;
+}
+
+input[type="range"].pareto-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #0B1B3D;
+  border: 2px solid #D4A038;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(11, 27, 61, 0.25);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+input[type="range"].pareto-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.12);
+  background: #0F2042;
+}
+
+input[type="range"].pareto-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #0B1B3D;
+  border: 2px solid #D4A038;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(11, 27, 61, 0.25);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
